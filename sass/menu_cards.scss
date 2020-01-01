@@ -1,0 +1,258 @@
+// all pages
+
+.menus{ 
+    margin-top: 68px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    h1{
+        color: #353535;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    h2{
+        text-align: center;
+    }
+    ul{
+        padding: 0px;
+        font-size: 15px;
+    }
+}
+
+.menu_card{
+    box-shadow: 1px 1px 12px #bebebe;
+    max-width: 800px;
+    min-height: 740px;
+}
+
+.center_title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.price{
+    font-weight: bold;
+    float:right;
+    margin-left: 20px;
+}
+
+// page : La note enchantée
+
+#la_note_enchantee{
+    font-family: 'Kalam', cursive;
+    color: #3D1319;
+    background-color: #FCDFDB;
+    h4{
+        font-size: 25px;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        &:before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+            background: #3D1319;
+            transition: width 0.3s ease-in-out;
+            left: 0;
+            bottom: 0;
+        }
+        
+        &:hover:before {
+            width: 100%;
+        }
+    }
+    h3{
+        text-align: center;
+    }
+    .line{
+        background-color: black;
+        margin-bottom: 53px;
+    }
+}
+
+.fa-music{
+    margin: 10px;
+    background: -webkit-linear-gradient(left, #F04C5F, #F6916A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// page : Le chic à la française
+
+#le_chic_a_la_française{
+    font-family: 'Croissant One', cursive;
+    background-color: #FFF5FE;
+    h2{
+    background: -webkit-linear-gradient(right, #6E4CCC, #E38913);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    h3{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        position: relative;
+        &:before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+
+            transition: width 0.3s ease-in-out;
+            left: 0;
+            bottom: 0;
+        }
+        
+        &:hover:before {
+            width: 100%;
+        }
+    }
+    .line{
+        margin-bottom: 40px;
+    }
+    #step_1{
+        $step_1: #C67412;
+        color: $step_1;
+        h3{
+            &:before {
+                background: $step_1;
+            }
+        }
+        .line{
+            background-color: $step_1;
+        }
+    }
+
+    #step_2{
+        $step_2: #A56799;
+        color: $step_2;
+        h3{
+            &:before {
+                background: $step_2;
+            }
+        }
+        .line{
+            background-color: $step_2;
+        }
+    }
+
+    #step_3{
+        $step_3: #6E4CCC;
+        color: $step_3;
+        h3{
+            &:before {
+                background: $step_3;
+            }
+        }
+        .line{
+            background-color: $step_3;
+        }
+    }
+}
+
+// page : Le délice des papailles
+
+#le_délice_des_papilles{
+    font-family: 'Dancing Script', cursive;
+    background-color: #EDEFEF;
+    h2{
+        font-size: 50px;
+        background: -webkit-linear-gradient(left, #0228DD, #229DF9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+        position: relative;
+        &:before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+            background: #000;
+            transition: width 0.3s ease-in-out;
+            left: 0;
+            bottom: 0;
+        }
+        
+        &:hover:before {
+            width: 100%;
+        }
+    }
+    ul{
+        font-size: 20px;
+    }
+    .line{
+        margin-bottom: 35px;
+    }
+    #step_1{
+        .line{
+            background-color: #0228DD;
+        }
+    }
+    #step_2{
+        .line{
+            background-color: #0670F3;
+        }
+    }
+    #step_3{
+        .line{
+            background-color: #229DF9;
+        }
+    }
+}
+
+// page : La palette du goût
+
+#la_palette_du_gout{
+    font-family: 'Kaushan Script', cursive;
+    background-color: #FDFFFD;
+    h2{
+        background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3{
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        &:before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 0;
+            background: #000;
+            transition: width 0.3s ease-in-out;
+            left: 0;
+            bottom: 0;
+        }
+        
+        &:hover:before {
+            width: 100%;
+        }
+    }
+    .right{
+        background: -webkit-linear-gradient(right, #3D923A, #BEFF7F);
+    }
+    .left{
+        background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
+    }
+    .line{
+        margin-bottom: 30px;
+    }
+}
+
+
+
