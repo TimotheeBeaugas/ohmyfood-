@@ -1,14 +1,4 @@
 @charset "UTF-8";
-@media screen and (max-width: 400px) {
-  h2 {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 400px) {
-  h2 {
-    font-size: 40px;
-  }
-}
 @media screen and (min-width: 1100px) {
   .menu_zoom_hover {
     margin-left: 50px;
@@ -36,21 +26,63 @@
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 430px) {
-  footer h2 {
-    font-size: 12px;
+@media screen and (max-width: 700px) {
+  li {
+    margin-top: 25px;
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 600px) {
   footer h2 {
+    font-size: 15px;
+  }
+
+  .menus h1 {
+    font-size: 25px;
+  }
+  .menus h2 {
+    font-size: 30px;
+  }
+  .menus h3 {
+    font-size: 20px;
+  }
+  .menus h4 {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 600px) {
+  footer h2 {
+    font-size: 20px;
+  }
+
+  .menus h2 {
+    font-size: 40px;
+  }
+  .menus h3 {
+    font-size: 25px;
+  }
+  .menus h4 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 600px) {
   .line {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .line:before,
+.line:after {
     content: "";
-    height: 3px;
-    flex-grow: 1;
+    border-top: 3px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+  }
+
+  .line:after {
+    margin: 0 0 0 20px;
   }
 }
 .menus {
@@ -68,9 +100,12 @@
 .menus h2 {
   text-align: center;
 }
-.menus ul {
+
+ul {
   padding: 0px;
   font-size: 15px;
+  list-style: none;
+  line-height: 2em;
 }
 
 .menu_card {
@@ -91,37 +126,39 @@
   margin-left: 20px;
 }
 
+.underline:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 0.3s ease-in-out;
+  left: 0;
+  bottom: 0;
+}
+.underline:hover:before {
+  width: 100%;
+}
+
 #la_note_enchantee {
   font-family: "Kalam", cursive;
   color: #3D1319;
   background-color: #FCDFDB;
 }
 #la_note_enchantee h4 {
-  font-size: 25px;
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
 }
 #la_note_enchantee h4:before {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 0;
-  background: #3D1319;
-  transition: width 0.3s ease-in-out;
-  left: 0;
-  bottom: 0;
+  background: black;
 }
-#la_note_enchantee h4:hover:before {
-  width: 100%;
+#la_note_enchantee h4:after {
+  background: black;
 }
 #la_note_enchantee h3 {
   text-align: center;
-}
-#la_note_enchantee .line {
-  background-color: black;
-  margin-bottom: 53px;
 }
 
 .fa-music {
@@ -143,27 +180,9 @@
 #le_chic_a_la_française h3 {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 25px;
   font-weight: bold;
   text-align: center;
-  padding-top: 20px;
   position: relative;
-}
-#le_chic_a_la_française h3:before {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 0;
-  transition: width 0.3s ease-in-out;
-  left: 0;
-  bottom: 0;
-}
-#le_chic_a_la_française h3:hover:before {
-  width: 100%;
-}
-#le_chic_a_la_française .line {
-  margin-bottom: 40px;
 }
 #le_chic_a_la_française #step_1 {
   color: #C67412;
@@ -171,8 +190,11 @@
 #le_chic_a_la_française #step_1 h3:before {
   background: #C67412;
 }
-#le_chic_a_la_française #step_1 .line {
-  background-color: #C67412;
+#le_chic_a_la_française #step_1 h3:after {
+  background: #C67412;
+}
+#le_chic_a_la_française #step_1 .underline:before {
+  background: #C67412;
 }
 #le_chic_a_la_française #step_2 {
   color: #A56799;
@@ -180,8 +202,11 @@
 #le_chic_a_la_française #step_2 h3:before {
   background: #A56799;
 }
-#le_chic_a_la_française #step_2 .line {
-  background-color: #A56799;
+#le_chic_a_la_française #step_2 h3:after {
+  background: #A56799;
+}
+#le_chic_a_la_française #step_2 .underline:before {
+  background: #A56799;
 }
 #le_chic_a_la_française #step_3 {
   color: #6E4CCC;
@@ -189,8 +214,11 @@
 #le_chic_a_la_française #step_3 h3:before {
   background: #6E4CCC;
 }
-#le_chic_a_la_française #step_3 .line {
-  background-color: #6E4CCC;
+#le_chic_a_la_française #step_3 h3:after {
+  background: #6E4CCC;
+}
+#le_chic_a_la_française #step_3 .underline:before {
+  background: #6E4CCC;
 }
 
 #le_délice_des_papilles {
@@ -198,7 +226,6 @@
   background-color: #EDEFEF;
 }
 #le_délice_des_papilles h2 {
-  font-size: 50px;
   background: -webkit-linear-gradient(left, #0228DD, #229DF9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -206,37 +233,28 @@
 #le_délice_des_papilles h3 {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 25px;
   position: relative;
-}
-#le_délice_des_papilles h3:before {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 0;
-  background: #000;
-  transition: width 0.3s ease-in-out;
-  left: 0;
-  bottom: 0;
-}
-#le_délice_des_papilles h3:hover:before {
-  width: 100%;
 }
 #le_délice_des_papilles ul {
   font-size: 20px;
 }
-#le_délice_des_papilles .line {
-  margin-bottom: 35px;
+#le_délice_des_papilles #step_1 h3:before {
+  background: #0228DD;
 }
-#le_délice_des_papilles #step_1 .line {
-  background-color: #0228DD;
+#le_délice_des_papilles #step_1 h3:after {
+  background: #0228DD;
 }
-#le_délice_des_papilles #step_2 .line {
-  background-color: #0670F3;
+#le_délice_des_papilles #step_2 h3:before {
+  background: #0670F3;
 }
-#le_délice_des_papilles #step_3 .line {
-  background-color: #229DF9;
+#le_délice_des_papilles #step_2 h3:after {
+  background: #0670F3;
+}
+#le_délice_des_papilles #step_3 h3:before {
+  background: #229DF9;
+}
+#le_délice_des_papilles #step_3 h3:after {
+  background: #229DF9;
 }
 
 #la_palette_du_gout {
@@ -254,27 +272,16 @@
   position: relative;
 }
 #la_palette_du_gout h3:before {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 0;
-  background: #000;
-  transition: width 0.3s ease-in-out;
-  left: 0;
-  bottom: 0;
+  background: black;
 }
-#la_palette_du_gout h3:hover:before {
-  width: 100%;
+#la_palette_du_gout h3:after {
+  background: black;
 }
 #la_palette_du_gout .right {
   background: -webkit-linear-gradient(right, #3D923A, #BEFF7F);
 }
 #la_palette_du_gout .left {
   background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
-}
-#la_palette_du_gout .line {
-  margin-bottom: 30px;
 }
 
 .logo {

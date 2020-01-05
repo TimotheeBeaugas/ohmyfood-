@@ -14,10 +14,13 @@
     h2{
         text-align: center;
     }
-    ul{
-        padding: 0px;
-        font-size: 15px;
-    }
+}
+
+ul{
+    padding: 0px;
+    font-size: 15px;
+    list-style: none;
+    line-height: 2em;
 }
 
 .menu_card{
@@ -38,6 +41,25 @@
     margin-left: 20px;
 }
 
+.underline{
+    &:before {
+        display: block;
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0;
+        background: #000;
+        transition: width 0.3s ease-in-out;
+        left: 0;
+        bottom: 0;
+    }
+    
+    &:hover:before {
+        width: 100%;
+    }
+}
+
+
 // page : La note enchantée
 
 #la_note_enchantee{
@@ -45,32 +67,18 @@
     color: #3D1319;
     background-color: #FCDFDB;
     h4{
-        font-size: 25px;
         position: relative;
         margin-left: 10px;
         margin-right: 10px;
         &:before {
-            display: block;
-            position: absolute;
-            content: "";
-            height: 2px;
-            width: 0;
-            background: #3D1319;
-            transition: width 0.3s ease-in-out;
-            left: 0;
-            bottom: 0;
+            background: black;
         }
-        
-        &:hover:before {
-            width: 100%;
+        &:after {
+            background: black;
         }
     }
     h3{
         text-align: center;
-    }
-    .line{
-        background-color: black;
-        margin-bottom: 53px;
     }
 }
 
@@ -94,29 +102,9 @@
     h3{
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 25px;
         font-weight: bold;
         text-align: center;
-        padding-top: 20px;
         position: relative;
-        &:before {
-            display: block;
-            position: absolute;
-            content: "";
-            height: 2px;
-            width: 0;
-
-            transition: width 0.3s ease-in-out;
-            left: 0;
-            bottom: 0;
-        }
-        
-        &:hover:before {
-            width: 100%;
-        }
-    }
-    .line{
-        margin-bottom: 40px;
     }
     #step_1{
         $step_1: #C67412;
@@ -125,9 +113,15 @@
             &:before {
                 background: $step_1;
             }
+
+            &:after {
+                background: $step_1;
+            }
         }
-        .line{
-            background-color: $step_1;
+        .underline{
+            &:before {
+                background: $step_1;
+            }
         }
     }
 
@@ -138,9 +132,14 @@
             &:before {
                 background: $step_2;
             }
+            &:after {
+                background: $step_2;
+            }
         }
-        .line{
-            background-color: $step_2;
+        .underline{
+            &:before {
+                background: $step_2;
+            }
         }
     }
 
@@ -151,9 +150,14 @@
             &:before {
                 background: $step_3;
             }
+            &:after {
+                background: $step_3;
+            }
         }
-        .line{
-            background-color: $step_3;
+        .underline{
+            &:before {
+                background: $step_3;
+            }
         }
     }
 }
@@ -164,7 +168,6 @@
     font-family: 'Dancing Script', cursive;
     background-color: #EDEFEF;
     h2{
-        font-size: 50px;
         background: -webkit-linear-gradient(left, #0228DD, #229DF9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -172,43 +175,39 @@
     h3{
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 25px;
         position: relative;
-        &:before {
-            display: block;
-            position: absolute;
-            content: "";
-            height: 2px;
-            width: 0;
-            background: #000;
-            transition: width 0.3s ease-in-out;
-            left: 0;
-            bottom: 0;
-        }
-        
-        &:hover:before {
-            width: 100%;
-        }
     }
     ul{
         font-size: 20px;
     }
-    .line{
-        margin-bottom: 35px;
-    }
     #step_1{
-        .line{
-            background-color: #0228DD;
+        h3{
+            &:before {
+                background: #0228DD;
+            }
+            &:after {
+                background: #0228DD;
+            }
         }
     }
     #step_2{
-        .line{
-            background-color: #0670F3;
+        h3{
+            &:before {
+                background: #0670F3;
+            }
+            &:after {
+                background: #0670F3;
+            }
         }
     }
     #step_3{
-        .line{
-            background-color: #229DF9;
+        h3{
+            &:before {
+                background: #229DF9;
+            }
+            &:after {
+                background: #229DF9;
+            }
         }
     }
 }
@@ -228,19 +227,10 @@
         margin-right: 10px;
         position: relative;
         &:before {
-            display: block;
-            position: absolute;
-            content: "";
-            height: 2px;
-            width: 0;
-            background: #000;
-            transition: width 0.3s ease-in-out;
-            left: 0;
-            bottom: 0;
+            background: black;
         }
-        
-        &:hover:before {
-            width: 100%;
+        &:after {
+            background: black;
         }
     }
     .right{
@@ -249,10 +239,6 @@
     .left{
         background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
     }
-    .line{
-        margin-bottom: 30px;
-    }
 }
-
 
 
