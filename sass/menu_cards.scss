@@ -70,12 +70,6 @@ ul{
         position: relative;
         margin-left: 10px;
         margin-right: 10px;
-        &:before {
-            background: black;
-        }
-        &:after {
-            background: black;
-        }
     }
     h3{
         text-align: center;
@@ -94,8 +88,11 @@ ul{
 #le_chic_a_la_française{
     font-family: 'Croissant One', cursive;
     background-color: #FFF5FE;
+    $step_1: #C67412;
+    $step_2: #A56799;
+    $step_3: #6E4CCC;
     h2{
-    background: -webkit-linear-gradient(right, #6E4CCC, #E38913);
+    background: -webkit-linear-gradient(right, $step_3, $step_1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
@@ -107,17 +104,7 @@ ul{
         position: relative;
     }
     #step_1{
-        $step_1: #C67412;
         color: $step_1;
-        h3{
-            &:before {
-                background: $step_1;
-            }
-
-            &:after {
-                background: $step_1;
-            }
-        }
         .underline{
             &:before {
                 background: $step_1;
@@ -126,16 +113,7 @@ ul{
     }
 
     #step_2{
-        $step_2: #A56799;
         color: $step_2;
-        h3{
-            &:before {
-                background: $step_2;
-            }
-            &:after {
-                background: $step_2;
-            }
-        }
         .underline{
             &:before {
                 background: $step_2;
@@ -144,16 +122,7 @@ ul{
     }
 
     #step_3{
-        $step_3: #6E4CCC;
         color: $step_3;
-        h3{
-            &:before {
-                background: $step_3;
-            }
-            &:after {
-                background: $step_3;
-            }
-        }
         .underline{
             &:before {
                 background: $step_3;
@@ -167,8 +136,12 @@ ul{
 #le_délice_des_papilles{
     font-family: 'Dancing Script', cursive;
     background-color: #EDEFEF;
+    $blue1:#0228DD;
+    $blue2:#0670F3;
+    $blue3:#229DF9;
+
     h2{
-        background: -webkit-linear-gradient(left, #0228DD, #229DF9);
+        background: -webkit-linear-gradient(left, $blue1, $blue3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -181,32 +154,32 @@ ul{
         font-size: 20px;
     }
     #step_1{
-        h3{
+        .line{
             &:before {
-                background: #0228DD;
+                color: $blue1;
             }
             &:after {
-                background: #0228DD;
+                color: $blue1;
             }
         }
     }
     #step_2{
-        h3{
+        .line{
             &:before {
-                background: #0670F3;
+                color: $blue2;
             }
             &:after {
-                background: #0670F3;
+                color: $blue2;
             }
         }
     }
     #step_3{
-        h3{
+        .line{
             &:before {
-                background: #229DF9;
+                color: $blue3;
             }
             &:after {
-                background: #229DF9;
+                color: $blue3;
             }
         }
     }
@@ -226,19 +199,17 @@ ul{
         margin-left: 10px;
         margin-right: 10px;
         position: relative;
+    }
+    .line{
         &:before {
-            background: black;
+            background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         }
         &:after {
-            background: black;
+            background: -webkit-linear-gradient(right, #3D923A, #BEFF7F);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         }
     }
-    .right{
-        background: -webkit-linear-gradient(right, #3D923A, #BEFF7F);
-    }
-    .left{
-        background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
-    }
 }
-
-

@@ -151,12 +151,6 @@ ul {
   margin-left: 10px;
   margin-right: 10px;
 }
-#la_note_enchantee h4:before {
-  background: black;
-}
-#la_note_enchantee h4:after {
-  background: black;
-}
 #la_note_enchantee h3 {
   text-align: center;
 }
@@ -173,7 +167,7 @@ ul {
   background-color: #FFF5FE;
 }
 #le_chic_a_la_française h2 {
-  background: -webkit-linear-gradient(right, #6E4CCC, #E38913);
+  background: -webkit-linear-gradient(right, #6E4CCC, #C67412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -187,35 +181,17 @@ ul {
 #le_chic_a_la_française #step_1 {
   color: #C67412;
 }
-#le_chic_a_la_française #step_1 h3:before {
-  background: #C67412;
-}
-#le_chic_a_la_française #step_1 h3:after {
-  background: #C67412;
-}
 #le_chic_a_la_française #step_1 .underline:before {
   background: #C67412;
 }
 #le_chic_a_la_française #step_2 {
   color: #A56799;
 }
-#le_chic_a_la_française #step_2 h3:before {
-  background: #A56799;
-}
-#le_chic_a_la_française #step_2 h3:after {
-  background: #A56799;
-}
 #le_chic_a_la_française #step_2 .underline:before {
   background: #A56799;
 }
 #le_chic_a_la_française #step_3 {
   color: #6E4CCC;
-}
-#le_chic_a_la_française #step_3 h3:before {
-  background: #6E4CCC;
-}
-#le_chic_a_la_française #step_3 h3:after {
-  background: #6E4CCC;
 }
 #le_chic_a_la_française #step_3 .underline:before {
   background: #6E4CCC;
@@ -238,23 +214,23 @@ ul {
 #le_délice_des_papilles ul {
   font-size: 20px;
 }
-#le_délice_des_papilles #step_1 h3:before {
-  background: #0228DD;
+#le_délice_des_papilles #step_1 .line:before {
+  color: #0228DD;
 }
-#le_délice_des_papilles #step_1 h3:after {
-  background: #0228DD;
+#le_délice_des_papilles #step_1 .line:after {
+  color: #0228DD;
 }
-#le_délice_des_papilles #step_2 h3:before {
-  background: #0670F3;
+#le_délice_des_papilles #step_2 .line:before {
+  color: #0670F3;
 }
-#le_délice_des_papilles #step_2 h3:after {
-  background: #0670F3;
+#le_délice_des_papilles #step_2 .line:after {
+  color: #0670F3;
 }
-#le_délice_des_papilles #step_3 h3:before {
-  background: #229DF9;
+#le_délice_des_papilles #step_3 .line:before {
+  color: #229DF9;
 }
-#le_délice_des_papilles #step_3 h3:after {
-  background: #229DF9;
+#le_délice_des_papilles #step_3 .line:after {
+  color: #229DF9;
 }
 
 #la_palette_du_gout {
@@ -271,17 +247,13 @@ ul {
   margin-right: 10px;
   position: relative;
 }
-#la_palette_du_gout h3:before {
-  background: black;
+#la_palette_du_gout .line:before {
+  border-color: pin;
 }
-#la_palette_du_gout h3:after {
-  background: black;
-}
-#la_palette_du_gout .right {
+#la_palette_du_gout .line:after {
   background: -webkit-linear-gradient(right, #3D923A, #BEFF7F);
-}
-#la_palette_du_gout .left {
-  background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo {
