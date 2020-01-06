@@ -248,7 +248,9 @@ ul {
   position: relative;
 }
 #la_palette_du_gout .line:before {
-  border-color: pin;
+  background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #la_palette_du_gout .line:after {
   background: -webkit-linear-gradient(right, #3D923A, #BEFF7F);
