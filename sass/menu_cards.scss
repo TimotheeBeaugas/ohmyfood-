@@ -25,7 +25,7 @@ ul{
 
 .menu_card{
     box-shadow: 1px 1px 12px #bebebe;
-    max-width: 800px;
+    max-width: 900px;
     min-height: 740px;
 }
 
@@ -42,6 +42,7 @@ ul{
 }
 
 .underline{
+    position: relative;
     &:before {
         display: block;
         position: absolute;
@@ -202,14 +203,10 @@ ul{
     }
     .line{
         &:before {
-            background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+            color:#3D923A;
         }
         &:after {
-            background: -webkit-linear-gradient(right, #3D923A, #BEFF7F);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+            color:#3D923A;
         }
     }
 }
