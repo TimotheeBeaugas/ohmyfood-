@@ -328,6 +328,7 @@ body {
 }
 .menu_zoom_hover:hover .menu_zoom img {
   transform: scale(1.1);
+  opacity: 50%;
 }
 
 .soon {
