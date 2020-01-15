@@ -32,35 +32,38 @@
   }
 }
 @media screen and (max-width: 600px) {
-  footer h4 {
+  footer h4, footer h5, footer h6 {
     font-size: 15px;
   }
 
-  .menus h1 {
+  .menus h2 {
     font-size: 25px;
   }
-  .menus h2 {
+  .menus h3 {
     font-size: 30px;
   }
-  .menus h3 {
+  .menus h4 {
     font-size: 20px;
   }
-  .menus h4 {
+  .menus h5 {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 600px) {
-  footer h4 {
+  footer h4, footer h5, footer h6 {
     font-size: 20px;
   }
 
   .menus h2 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .menus h3 {
-    font-size: 25px;
+    font-size: 40px;
   }
   .menus h4 {
+    font-size: 25px;
+  }
+  .menus h5 {
     font-size: 25px;
   }
 }
@@ -91,13 +94,13 @@
   align-content: center;
   flex-direction: column;
 }
-.menus h1 {
+.menus h2 {
   color: #353535;
   text-align: center;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
-.menus h2 {
+.menus h3 {
   text-align: center;
 }
 
@@ -149,12 +152,12 @@ ul {
   color: #3D1319;
   background-color: #FCDFDB;
 }
-#la_note_enchantee h4 {
+#la_note_enchantee h5 {
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
 }
-#la_note_enchantee h3 {
+#la_note_enchantee h5 {
   text-align: center;
 }
 
@@ -169,12 +172,12 @@ ul {
   font-family: "Croissant One", cursive;
   background-color: #FFF5FE;
 }
-#le_chic_a_la_française h2 {
+#le_chic_a_la_française h3 {
   background: -webkit-linear-gradient(right, #6E4CCC, #C67412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#le_chic_a_la_française h3 {
+#le_chic_a_la_française h4 {
   margin-left: 10px;
   margin-right: 10px;
   font-weight: bold;
@@ -204,12 +207,12 @@ ul {
   font-family: "Dancing Script", cursive;
   background-color: #EDEFEF;
 }
-#le_délice_des_papilles h2 {
+#le_délice_des_papilles h3 {
   background: -webkit-linear-gradient(left, #0228DD, #229DF9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#le_délice_des_papilles h3 {
+#le_délice_des_papilles h4 {
   margin-left: 10px;
   margin-right: 10px;
   position: relative;
@@ -240,12 +243,12 @@ ul {
   font-family: "Kaushan Script", cursive;
   background-color: #FDFFFD;
 }
-#la_palette_du_gout h2 {
+#la_palette_du_gout h3 {
   background: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#la_palette_du_gout h3 {
+#la_palette_du_gout h4 {
   margin-left: 10px;
   margin-right: 10px;
   position: relative;
@@ -369,13 +372,13 @@ a {
   text-decoration: none;
 }
 
-footer h4 {
+footer h4, footer h5, footer h6 {
   text-decoration: none;
   font-family: "Maven Pro", sans-serif;
   margin: 20px;
   color: #FCCA46;
 }
-footer h4:hover {
+footer h4:hover, footer h5:hover, footer h6:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }

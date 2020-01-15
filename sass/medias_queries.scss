@@ -57,26 +57,26 @@ $width2: 700px;
 @media screen and (max-width: $width1)
 {
     footer{
-        h4{
+        h4,h5,h6{
             font-size: 15px;
         }
     }
 
     .menus{
 
-        h1{
+        h2{
             font-size: 25px;
         }
 
-        h2{
+        h3{
             font-size: 30px;
         }
 
-        h3{
+        h4{
             font-size: 20px;
         }
 
-        h4{
+        h5{
             font-size: 20px;
         }
 
@@ -86,21 +86,25 @@ $width2: 700px;
 @media screen and (min-width: $width1)
 {
     footer{
-        h4{
+        h4,h5,h6{
             font-size: 20px;
         }
     }
 
     .menus{
         h2{
-            font-size: 40px;
+            font-size: 32px;
         }
 
         h3{
-            font-size: 25px;
+            font-size: 40px;
         }
 
         h4{
+            font-size: 25px;
+        }
+
+        h5{
             font-size: 25px;
         }
     }
@@ -111,7 +115,7 @@ $width2: 700px;
 @media screen and (min-width: $width1)
 {
     .line {
-        display: flex;
+        display: flex; 
         width: 100%;
         justify-content: center;
         align-items: center;
